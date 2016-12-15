@@ -1,0 +1,369 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
+<head>
+
+
+
+<style>
+
+input[type="checkbox"], input[type="radio"] {
+    display: block;
+    
+}
+
+input {
+
+ display: -webkit-box;
+    font-family: "Montserrat";
+    font-size: 1em;
+   
+}
+
+ select{
+
+ display: -webkit-box;
+    font-family: "Montserrat";
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+
+label
+{
+
+ display: -webkit-box;
+    font-family: "Montserrat";
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+
+
+
+
+input {
+    line-height: normal;
+}
+
+
+body {
+    color: #fff;
+}
+
+
+
+
+
+</style>
+
+
+
+
+	    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+        <title>Legal LightHouse</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Add your business website description here">
+		
+        <meta name="keywords" content="Add your, business, website, keywords, here">
+		
+        <meta name="author" content="Add your business, website, author here">
+		
+		<!-- ==============================================
+		Favicons
+		=============================================== --> 
+		<link rel="shortcut icon" href="img/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+		
+	    <!-- ==============================================
+		CSS
+		=============================================== -->
+        <!-- Style-->
+        
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!-- ADD NEW LIBRARY FOR Font Awesome -->	
+		
+				
+		<!-- ==============================================
+		Feauture Detection
+		=============================================== -->
+		
+		
+		<!--[if lt IE 9]>
+		 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->		
+		
+</head>
+
+<body>
+
+     <!-- ==============================================
+	 Navbar
+	 =============================================== -->
+	 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <!-- Brand and toggle get grouped for better mobile display -->
+	    <a class="navbar-brand" href="index.html">
+		<i><%= image_tag "images/logo.png" , size: "35x30" %>Legal LightHouse.</a>
+</i>
+       <input type="checkbox" id="toggle" />
+	   <label for="toggle" class="toggle"></label>
+
+         <!-- Collect the nav links, forms, and other content for toggling -->
+		 <ul class="menu">
+		 <!-- <li><a href="index.html">HOME</a></li> -->
+		 
+		<li> <%= link_to "HOW IT WORKS", :controller => :home, :action => :howitworks%></li>
+		  
+		<li><%= link_to "FOR LAWYERS", :controller => :home, :action => :forlawyers%></li>
+		  
+		 <li>    <%= link_to "ABOUT US", :controller => :home, :action => :about%></li>
+		  
+		  
+		  <li>   <%= link_to "FAQ", :controller => :home, :action => :faq%></li>
+		   
+  <li>   <%= link_to "CONTACT", :controller => :home, :action => :contact%></li>
+		  
+		 
+		 </ul><!-- /.ul.menu -->
+         </div><!-- /.container -->
+         </nav><!-- /.nav -->
+	 
+     <!-- ==============================================
+	 Header
+	 =============================================== -->	 
+	 <header class="header-login">
+      <div class="container">
+	   <div class="content">
+	   
+	   
+  <div class="row">
+	     <h1 class="revealOnScroll" data-animation="fadeInDown"><i> <%= image_tag "images/logo.png" , size: "45x40" %></i>Sign Up</h1>
+		 <p>New Here? Create Account.</p>
+        </div><!-- /.row -->
+       
+       </div><!-- /.content -->
+	  </div><!-- /.container -->
+     </header><!-- /header -->
+	 
+     <!-- ==============================================
+     Banner Section
+     =============================================== -->
+	 <section class="banner-login">
+	  <div class="container">
+	   <div class="row">
+	   
+	    <main class="main main-signup col-lg-12">
+	     <div class="col-lg-6 col-lg-offset-3 text-center">
+		  <div class="form-sign">
+		   <form method="post">
+		    <div class="form-head">
+			 <h3>Sign Up</h3>
+			</div><!-- /.form-head -->
+			
+            <div class="form-body">
+			
+            
+
+		     <div class="form-row">
+		      <div class="form-controls">
+			   <input type="text" name="firstname" class="field" placeholder="First Name">
+			  </div><!-- /.form-controls -->
+		     </div><!-- /.form-row -->
+			 
+			 
+		     <div class="form-row">
+		      <div class="form-controls">
+			   <input type="text" name="lastname" class="field" placeholder="Last Name">
+			  </div><!-- /.form-controls -->
+		     </div><!-- /.form-row -->
+			   <p>In which Law Society/Bar are you an active member?</p>
+	<br>
+	
+         <div class="checkboxes" style="margin-left: 12%">
+      
+		
+        <span><label for="application_bars_barreau"><input type="checkbox" value="barreau" name="application[bars][]" id="application_bars_barreau" data-validate="true">
+		<label class="collection_check_boxes" for="application_bars_barreau">Barreau du Québec</label>
+		</label></span>
+		
+		
+		<span><label for="application_bars_chambre"><input type="checkbox" value="chambre" name="application[bars][]" id="application_bars_chambre" data-validate="true">
+		<label class="collection_check_boxes" for="application_bars_chambre">Chambre des notaires du Québec</label></label></span>
+		
+		<span><label for="application_bars_upper"><input type="checkbox" value="upper" name="application[bars][]" id="application_bars_upper" data-validate="true"><label class="collection_check_boxes" for="application_bars_upper">Law Sociey of Upper Canada</label></label></span>
+		
+		<span><label for="application_bars_bc"><input type="checkbox" value="bc" name="application[bars][]" id="application_bars_bc" data-validate="true"><label class="collection_check_boxes" for="application_bars_bc">Law Society of British Columbia</label></label></span>
+		
+		<span><label for="application_bars_ab"><input type="checkbox" value="ab" name="application[bars][]" id="application_bars_ab" data-validate="true"><label class="collection_check_boxes" for="application_bars_ab">Law Society of Alberta</label></label></span>
+		
+		<span><label for="application_bars_sk"><input type="checkbox" value="sk" name="application[bars][]" id="application_bars_sk" data-validate="true"><label class="collection_check_boxes" for="application_bars_sk">Law Society of Saskatchewan</label></label></span>
+		
+		<span><label for="application_bars_mb"><input type="checkbox" value="mb" name="application[bars][]" id="application_bars_mb" data-validate="true"><label class="collection_check_boxes" for="application_bars_mb">Law Society of Manitoba</label></label></span>
+		
+		<span><label for="application_bars_nb"><input type="checkbox" value="nb" name="application[bars][]" id="application_bars_nb" data-validate="true"><label class="collection_check_boxes" for="application_bars_nb">Law Society of New Brunswick</label></label></span>
+		
+		
+		<span><label for="application_bars_ns"><input type="checkbox" value="ns" name="application[bars][]" id="application_bars_ns" data-validate="true"><label class="collection_check_boxes" for="application_bars_ns">Nova Scotia Barristers' Society</label></label></span>
+		
+		
+		<span><label for="application_bars_pe"><input type="checkbox" value="pe" name="application[bars][]" id="application_bars_pe" data-validate="true"><label class="collection_check_boxes" for="application_bars_pe">Law Society of Prince Edward Island</label></label></span>
+		
+		<span><label for="application_bars_nl"><input type="checkbox" value="nl" name="application[bars][]" id="application_bars_nl" data-validate="true"><label class="collection_check_boxes" for="application_bars_nl">Law Society of Newfoundland and Labrador</label></label></span>
+		
+		<span><label for="application_bars_yt"><input type="checkbox" value="yt" name="application[bars][]" id="application_bars_yt" data-validate="true"><label class="collection_check_boxes" for="application_bars_yt">Law Society of Yukon</label></label></span>
+		
+		<span><label for="application_bars_nt"><input type="checkbox" value="nt" name="application[bars][]" id="application_bars_nt" data-validate="true"><label class="collection_check_boxes" for="application_bars_nt">Law Society of the Northwest Territories</label></label></span>
+		
+		<span><label for="application_bars_nu"><input type="checkbox" value="nu" name="application[bars][]" id="application_bars_nu" data-validate="true"><label class="collection_check_boxes" for="application_bars_nu">Law Society of Nunavut</label></label></span>
+		
+		<input type="hidden" name="application[bars][]" value="">
+      </div>
+			 </div><!-- /.form-body -->
+	
+			 <div class="form-foot">
+			  <div class="form-actions">
+			  
+			  
+			   <input value="Next" class="form-btn" type="submit">
+			   
+			  
+			   
+			  </div><!-- /.form-actions -->
+			 </div><!-- /.form-foot -->
+			</form>
+		   </div><!-- /.form-sign -->
+		  </div><!-- /.shell -->
+		 </main>
+		
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+	 </section><!-- /section -->
+	 
+     <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+        <div class="footer">
+	  <div class="container">
+	   <div class="row">
+	  
+	    <div class="col-md-4 col-sm-6 text-left">
+	     <h4 class="heading no-margin">About Us</h4>
+		 <hr class="mint">
+		 <p> The Ultimate Lawyers Marketplace for Clients  to connect, collaborate, and get work done.</p>
+		 <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+	    </div><!-- /.col-md-4 -->
+	   
+	    <div class="col-md-2 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Company</h4>
+		 <hr class="mint">
+		 <div class ="no-padding">
+		  <%= link_to "HOW IT WORKS", :controller => :home, :action => :howitworks%>
+   <%= link_to "FOR LAWYERS", :controller => :home, :action => :forlawyers%>
+		  
+		    <%= link_to "ABOUT US", :controller => :home, :action => :about%>
+		  
+		  
+		     <%= link_to "FAQ", :controller => :home, :action => :faq%>
+		   
+     <%= link_to "CONTACT", :controller => :home, :action => :contact%>	 
+		 </div>
+	    </div><!-- /.col-md-2 -->	
+		
+		<div class="col-md-3 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Other Services</h4>
+		 <hr class="mint">
+		 <div class="no-padding">
+		  <a href="#">Privacy Policy</a>
+		  <a href="#">Terms of Use</a>
+		  <!-- <a href="faq.html">FAQ</a>		  -->
+		 </div>
+	    </div><!-- /.col-md-3 -->	
+		
+	    <div class="col-md-3 col-sm-6 text-left">
+	    <h4 class="heading no-margin">Instagram Feed</h4>
+		<hr class="mint">
+		 <div class="no-padding">
+		   <a href="#"> -</a>
+		   <!-- <a href="#">Top Lawyers by Skill</a> -->
+		   <!-- <a href="#">Top Lawyers in USA</a> -->
+		   <!-- <a href="#">Top Lawyers in Canada</a> -->
+		   <!-- <a href="#">Top Lawyers in Australia</a> -->
+		   <!-- <a href="#">Top Lawyers in Kenya</a>		   -->
+		  </div>
+		 </div><!-- /.col-md-3 -->
+		 
+	    </div><!-- /.row -->
+	   <div class="clearfix"></div>
+	  </div><!-- /.container-->
+     </div><!-- /.footer -->					
+	 
+	 <!-- ==============================================
+	 Made Section
+	 =============================================== -->
+	  <section class="made">
+	  <div class="container">
+	   <div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center">
+		 <h4 class="made-with-love">Legal Lighthouse Inc.</h4>
+		 <p class="made-with-love-1">1500 From St. College, Suite 200, Office 3 St. Laurent, H4L 5G6  </p>
+		</div>
+		<!-- /.col-lg-10 -->
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+     </section><!-- /.made -->
+	 
+	 <!-- ==============================================
+	 Bottom Footer Section
+	 =============================================== -->	
+     <footer id="main-footer" class="main-footer">
+	  <div class="container">
+	   <div class="row">
+	   
+	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		 <ul class="social-links">
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		 </ul>
+		</div>
+	    <!-- /.col-sm-4 -->
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		 <div class="img-responsive text-center">
+ <i><%= image_tag "images/logo_en.png" , size: "60x55" %></i>		 </div><!-- End image-->
+		</div>
+		<!-- /.col-sm-4 -->
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		 <p>&copy;2016 Legal Lighthouse Inc. <a href="#" target="_blank"></a></p>
+		</div>
+		<!-- /.col-sm-4 -->
+				
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+	 </footer><!-- /.footer -->  
+	 
+     <a id="scrollup">Scroll</a>
+	 
+     <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+	 
+    
+
+</body>
+</html>

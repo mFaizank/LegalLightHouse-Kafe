@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
+<head>
+
+	    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		
+		<meta charset="utf-8">
+        <title>Legal LightHouse</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Add your business website description here">
+        <meta name="keywords" content="Add your, business, website, keywords, here">
+        <meta name="author" content="Add your business, website, author here">
+		
+		<!-- ==============================================
+		Favicons
+		=============================================== --> 
+		<link rel="shortcut icon" href="img/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+		
+	    <!-- ==============================================
+		CSS
+		=============================================== -->
+      
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!-- ADD NEW LIBRARY FOR Font Awesome -->	
+		
+		
+		
+		
+		<!--[if lt IE 9]>
+		 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->		
+		
+</head>
+
+<body>
+
+     <!-- ==============================================
+	 Navbar
+	 =============================================== -->
+	 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <!-- Brand and toggle get grouped for better mobile display -->
+	   <!-- <a class="navbar-brand"><i class="fa fa-coffee"></i> The Kafe.</a> -->
+	   
+	   
+	    <a class="navbar-brand" href="index.html"><i><%= image_tag "images/logo.png" , size: "35x30" %>Legal LightHouse.</a></i>
+       <input type="checkbox" id="toggle" />
+	   <label for="toggle" class="toggle"></label>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+		<ul class="menu">
+	<!-- <li><a href="index.html">HOME</a></li> -->
+		<li>  <%= link_to "HOW IT WORKS", :controller => :home, :action => :howitworks%></li>
+		  
+		<li>    <%= link_to "FOR LAWYERS", :controller => :home, :action => :forlawyers%></li>
+		  
+		 <li>    <%= link_to "ABOUT US", :controller => :home, :action => :about%></li>
+		  
+		  
+		  <li>   <%= link_to "FAQ", :controller => :home, :action => :faq%></li>
+		   
+  <li>   <%= link_to "CONTACT", :controller => :home, :action => :contact%></li>
+		</ul><!-- /.ul.menu -->
+      </div><!-- /.container -->
+     </nav><!-- /.nav -->
+	 
+     <!-- ==============================================
+	 Header
+	 =============================================== -->	 
+	 <header class="header-about">
+      <div class="container">
+	   <div class="content">
+        <div class="row">
+	     <h1 class="revealOnScroll" data-animation="fadeInDown"><i> <%= image_tag "images/logo.png" , size: "45x40" %></i>About Legal LightHouse</h1>
+		 
+		 <!-- <p>How we grew into what we are today.</p> -->
+         </div><!--/.row-->
+         </div><!--/.content-->
+	     </div><!--/.container-->
+         </header><!--/header-->
+	 
+     <!-- ==============================================
+	 Hello Section
+	 =============================================== -->
+     
+	 <section class="hello" id="hello">
+	  <div class="container">
+	   <div class="row">
+	    <div class="col-lg-12">
+		 <h3>Life can be stressful, but at Legal Lighthouse we believe that benefiting from quality legal solutions shouldn’t have to be. Welcome to our platform; we hope that you enjoy your experience!</h3>
+		
+        </div><!-- /.col-lg-12 -->
+	   </div><!-- /.row -->
+	  </div> <!-- /.container -->
+     </section><!-- End section-->
+
+	 <!-- ==============================================
+	 Timeline Section
+	 =============================================== -->	  
+     <section class="time">
+	  <div class="container">
+	  
+	   <h3>Our Vision</h3>
+	   <hr class="mint">
+	   <!-- <p class="top-p">Why we are trying to make things better</p> -->
+	   
+       <ul class="timeline">
+	   
+        <li>
+         <div class="timeline-badge mint"></i></div>
+         <div class="timeline-panel revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+          <div class="timeline-heading">
+           <h4 class="timeline-title">WHAT IS LEGAL LIGHTHOUSE’S MISSION?</h4>
+          </div><!-- /.timeline-heading -->
+          <div class="timeline-body">
+           <p>Hiring a lawyer can be stressful, especially when you don’t know how much it’s actually going to cost.
+
+Imagine going to a restaurant that you know has a reputation for being expensive and when you arrive, there are no clear prices next to the menu items. Would it be safe to say that being unable to predict the cost of your night might affect the enjoyment of your meal? Even if the food and service were excellent, the financial surprise at the end of the night could make your chances of returning slim. We wouldn’t like this to happen at a restaurant, and studies in law have shown that clients don't like this either. Legal Lighthouse’s mission is to connect people with lawyers who are transparent about the services that they offer and how much each service costs. No more surprises.</p>
+          </div><!-- /.timeline-body -->
+         </div><!-- /.timeline-panel -->
+        </li><!-- /li -->
+		
+        <li class="timeline-inverted">
+         <div class="timeline-badge mint"></div>
+          <div class="timeline-panel revealOnScroll" data-animation="slideInRight" data-timeout="200">
+           <div class="timeline-heading">
+            <h4 class="timeline-title">WHEN TO USE OUR SERVICES?</h4>
+           </div><!-- /.timeline-heading -->
+           <div class="timeline-body">
+            <p>Let’s face it, there are certain problems that require legal solutions.
+
+We have all heard stories of people needing a lawyer in reaction to being wrongfully terminated from their job or losing custody over their children. There are also times when lawyers are needed to prevent future problems, such as by startups who need a solid legal structure, by businesses who need an employment contract reviewed, by common law couples who need a spousal agreement, etc. Although people facing these situations could clearly benefit from legal solutions, they often don’t hire lawyers because they are afraid of being overcharged. Legal Lighthouse aims to address this fear by creating a platform to give everyone access to the right lawyer at a fair price.</p>
+           </div><!-- /.timeline-body -->
+         </div><!-- /.timeline-panel -->
+        </li><!-- /li.timeline-inverted -->
+		
+        <li>
+         <div class="timeline-badge mint"></div>
+          <div class="timeline-panel revealOnScroll" data-animation="slideInLeft" data-timeout="200">
+           <div class="timeline-heading">
+            <h4 class="timeline-title">WHO ARE THE LAWYERS?</h4>
+           </div><!-- /.timeline-heading -->
+           <div class="timeline-body">
+            <p>You might wonder why lawyers would want to use this platform - what’s in it for them? </br>
+
+While it’s a common myth that all lawyers are rich, in reality, practicing law is very costly. By working with clients through Legal Lighthouse, lawyers decrease many of the traditional costs of practicing law (like renting expensive downtown offices). By reducing their costs, they can offer more affordable prices to customers like you!</p>
+           </div><!-- /.timeline-body -->
+         </div><!-- /.timeline-panel -->
+        </li><!-- /li -->
+		
+        <!-- <li class="timeline-inverted"> -->
+         <!-- <div class="timeline-panel revealOnScroll" data-animation="slideInRight" data-timeout="200"> -->
+          <!-- <div class="timeline-heading"> -->
+           <!-- <h4 class="timeline-title">1st, March 2014</h4> -->
+          <!-- </div><!-- /.timeline-heading --> 
+          <!-- <div class="timeline-body"> -->
+           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat nisi. Donec condimentum mi eget est auctor pellentesque. Donec ultrices consequat neque at consectetur. Nunc venenatis lorem quis auctor vulputate. Donec et sagittis nulla, mollis cursus leo. Phasellus a ante ut neque consequat interdum. Aenean eget tortor elit. Morbi a magna vitae justo aliquet porta eu ut quam.</p> -->
+          <!-- </div><!-- /.timeline-body --> 
+         <!-- </div><!-- /.timeline-panel --> 
+        <!-- </li><!-- /li.timeline-inverted --> 
+		
+        <!-- <li> -->
+         <!-- <div class="timeline-badge mint"><i class="fa fa-line-chart"></i></div> -->
+         <!-- <div class="timeline-panel revealOnScroll" data-animation="slideInLeft" data-timeout="200"> -->
+          <!-- <div class="timeline-heading"> -->
+           <!-- <h4 class="timeline-title">14th, March 2014</h4> -->
+          <!-- </div><!-- /.timeline-heading --> 
+          <!-- <div class="timeline-body"> -->
+           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat nisi. Donec condimentum mi eget est auctor pellentesque. Donec ultrices consequat neque at consectetur. Nunc venenatis lorem quis auctor vulputate. Donec et sagittis nulla, mollis cursus leo. Phasellus a ante ut neque consequat interdum. Aenean eget tortor elit. Morbi a magna vitae justo aliquet porta eu ut quam.</p> -->
+          <!-- </div><!-- /.timeline-body --> 
+         <!-- </div><!-- /.timeline-panel --> 
+        <!-- </li><!-- /li -->
+		
+        <!-- <li class="timeline-inverted"> -->
+         <!-- <div class="timeline-badge mint"><i class="fa fa-usd"></i></div> -->
+          <!-- <div class="timeline-panel revealOnScroll" data-animation="slideInRight" data-timeout="200"> -->
+           <!-- <div class="timeline-heading"> -->
+            <!-- <h4 class="timeline-title">2nd, April 2014</h4> -->
+           <!-- </div><!-- /.timeline-title --> 
+           <!-- <div class="timeline-body"> -->
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat nisi. Donec condimentum mi eget est auctor pellentesque. Donec ultrices consequat neque at consectetur. Nunc venenatis lorem quis auctor vulputate. Donec et sagittis nulla, mollis cursus leo. Phasellus a ante ut neque consequat interdum. Aenean eget tortor elit. Morbi a magna vitae justo aliquet porta eu ut quam.</p> -->
+           <!-- </div><!-- /.timeline-body --> 
+          <!-- </div><!-- /.timeline-panel --> 
+        <!-- </li><!-- /li.timeline-inverted --> 
+       </ul>
+       <!-- /ul.timeline -->
+      </div><!-- /.container -->
+     </section><!-- /section -->
+
+     <!-- ==============================================
+	 White Section
+	 =============================================== -->		  
+	
+<section id="team" class="team">
+      <div class="container">
+       <!-- Title Page -->
+       <div class="row text-center">
+        <div class="col-lg-12">	   
+	     <h3>Advisory Board</h3>
+	     <hr class="mint">
+	     <!-- <p class="top-p">Our Brilliant and Harworking Team.</p> -->
+        </div><!-- /.col-lg-12 -->
+       </div><!-- /.row -->
+       <!-- End Title Page -->
+       
+	   <!-- People -->
+       <div class="row">
+    	
+       <!-- Start Profile -->
+        <div class="col-lg-3 profile col-md-3 col-sm-4">
+         <div class="image-wrap">
+          <!-- <div class=""> -->
+           <!-- <span class="overlay-img"></span> -->
+           <!-- <span class="overlay-text-thumb">Founder/C.E.O</span>          </div><!-- /.hover-wrap --> 
+		   
+		    <%= image_tag "advisory/d_hinton.jpg" %>
+                   </div>
+         <!-- /.image-wrap -->
+       <center > <h5 class="profile-name">Deborah Hinton</h5>
+		 <h6>Director, Special projects</h6>
+		 <div class="social">
+		  <ul class="social-icons">
+		   
+		   <li><a href="https://www.linkedin.com/in/deborahhinton" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	      </ul>
+		 </div></center>
+		 
+		 
+		 
+         <!-- <p class="profile-description">Director, Special projects -->
+<!-- </p> -->
+ 
+            	
+		 <!-- <div class="social"> -->
+		  <!-- <ul class="social-icons"> -->
+		   <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+	      <!-- </ul> -->
+		 <!-- </div>     <!-- /.social --> 
+        </div><!-- /.col-lg-4 -->
+	   <!-- End Profile -->
+        
+       <!-- Start Profile -->
+        <div class="col-lg-3 profile col-md-3 col-sm-4">
+	     <div class="image-wrap">
+	      <!-- <div class="hover-wrap"> -->
+	       <!-- <span class="overlay-img"></span> -->
+		   <!-- <span class="overlay-text-thumb">Accountant</span>	      </div>     <!-- /.hover-wrap --> 
+		    <%= image_tag "advisory/r_janda.jpg" %>
+	     	     </div>
+	     <!-- /.image-wrap -->
+       <center > <h5 class="profile-name">Richard Janda</h5>
+		 <h6>Professor of Business Law</h6>
+		 
+		 <div class="social">
+		  <ul class="social-icons">
+		   
+		   <li><a href="https://www.mcgill.ca/law/about/profs/janda-richard" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	      </ul>
+		 </div>
+		 
+		 
+		 </center>
+            	
+	     <!-- <div class="social"> -->
+	      <!-- <ul class="social-icons"> -->
+		   <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+	      <!-- </ul> -->
+	     <!-- </div>        <!-- /.social --> 
+        </div><!-- /.col-lg-4 -->
+       <!-- End Profile -->
+        
+       <!-- Start Profile -->
+        <div class="col-lg-3 profile col-md-3 col-sm-4">
+	     <div class="image-wrap">
+		  <!-- <div class="hover-wrap"> -->
+		   <!-- <span class="overlay-img"></span> -->
+		   <!-- <span class="overlay-text-thumb">Lead Developer</span>		  </div>     <!-- /.hover-wrap --> 
+		    <%= image_tag "advisory/m_blundon.jpg" %>
+		   
+		  	     </div>
+	     <!-- /.image-wrap -->
+         <center > <h5 class="profile-name">Michael Blundon</h5>
+		 <h6>Account Executive</h6>
+		 <div class="social">
+		  <ul class="social-icons">
+		   
+		   <li><a href="https://ca.linkedin.com/in/michaelblundon" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	      </ul>
+		 </div>
+		 
+		 
+		 </center>
+            	
+	     <!-- <div class="social"> -->
+	      <!-- <ul class="social-icons"> -->
+		   <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+		  <!-- </ul> -->
+	     <!-- </div>                 <!-- /.social --> 
+        </div><!-- /.col-lg-4 -->
+		
+		<div class="col-lg-3 profile col-md-3 col-sm-4">
+	     <div class="image-wrap">
+		  <!-- <div class="hover-wrap"> -->
+		   <!-- <span class="overlay-img"></span> -->
+		   <!-- <span class="overlay-text-thumb">Lead Developer</span>		  </div><!-- /.hover-wrap -->
+		   
+		     <%= image_tag "advisory/p_reynaud.jpg" %>
+		   
+		      </div>
+	     <!-- /.image-wrap -->
+        <center > <h5 class="profile-name">Patrick</h5>
+		 <h6>Tax Lawyer</h6>
+		 <div class="social">
+		  <ul class="social-icons">
+		   
+		   <li><a href="https://ca.linkedin.com/in/patrick-reynaud-594b7165" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	      </ul>
+		 </div>
+		 
+		 
+		 </center>
+            	
+	    
+        </div><!-- /.col-lg-4 -->
+       <!-- End Profile -->
+        
+       </div><!-- End People -->
+      </div><!-- /.container -->
+     </section>
+
+
+	<!-- <section class="whitebg"> -->
+	  <!-- <div class="container"> -->
+	   <!-- <div class="row"> -->
+		<!-- <div class="col-lg-8 col-lg-offset-2"> -->
+		 <!-- <h3></h3> -->
+		 <!-- </div><!-- /.col-lg-8 -->  
+	  <!-- </div><!-- /.row -->  
+	 <!-- </div><!-- /.container -->  
+	 <!-- </section><!-- /w -->  
+	
+	 <!-- ==============================================
+	 Team Section
+	 =============================================== -->	
+     <section id="team" class="team">
+      <div class="container">
+       <!-- Title Page -->
+       <div class="row text-center">
+        <div class="col-lg-12">	   
+	     <h3>Legal Lighthouse Founders</h3>
+	     <hr class="mint">
+	     <p class="top-p"></p>
+        </div><!-- /.col-lg-12 -->
+       </div><!-- /.row -->
+       <!-- End Title Page -->
+       
+	   <!-- People -->
+       <div class="row">
+    	
+       <!-- Start Profile -->
+        <div class="col-lg-4 profile">
+         <div class="image-wrap">
+          <div class="hover-wrap">
+           <span class="overlay-img"></span>
+           <span class="overlay-text-thumb">President</span>          </div><!-- /.hover-wrap -->
+		     <%= image_tag "founders/danielle.jpg" , size: "400x430" %>
+		   </div>
+         <!-- /.image-wrap -->
+         <h5 class="profile-name">DANIELLE LINNEN</h5>
+         <p class="profile-description">Danielle is a bilingual lawyer who has championed legal issues related to the environment, social justice and aboriginal rights. She has worked at the United Nation’s Convention on Biological Diversity (CBD) and has practiced aboriginal, corporate, commercial, and constitutional law for four years. Danielle holds a Juris Doctorate Degree, a Bachelor of Law, and an Honour’s Bachelor Degree in International Development and Environmental Studies.</p>
+            	
+		 <div class="social">
+		  <ul class="social-icons">
+		   <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+		   <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+		   <li><a href="https://ca.linkedin.com/in/danielle-linnen-2574861b" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	      </ul>
+		 </div><!-- /.social -->
+        </div><!-- /.col-lg-4 -->
+	   <!-- End Profile -->
+        
+       <!-- Start Profile -->
+        <div class="col-lg-4 profile">
+	     <div class="image-wrap">
+	      <div class="hover-wrap">
+	       <span class="overlay-img"></span>
+		   <span class="overlay-text-thumb">VP Product Development</span>	      </div><!-- /.hover-wrap -->
+		   
+		   <%= image_tag "founders/jameson.jpg" , size: "400x430" %>
+		   
+	         </div>
+	     <!-- /.image-wrap -->
+         <h5 class="profile-name">JAMESON JONES-DOYLE</h5>
+         <p class="profile-description">Jameson is an experienced social enterprise coach with expertise in startup-related strategic innovation and financial management. He has worked for the Center for International Sustainable Development Law (CISDL), the CBD, McGill University, and has managed the development of several startups and not-for-profits. He holds a Masters in Marketing and a B.A in Psychology, and while in graduate school he was named as Concordia’s Outstanding Student of the Year as well as one of Quebec’s top three graduate personalities.</p>
+            	
+	     <div class="social">
+	      <ul class="social-icons">
+		  
+		   <li><a href="http://ca.linkedin.com/in/jamesonjonesdoyle"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	      </ul>
+	     </div><!-- /.social -->
+        </div><!-- /.col-lg-4 -->
+       <!-- End Profile -->
+        
+       <!-- Start Profile -->
+        <div class="col-lg-4 profile">
+	     <div class="image-wrap">
+		  <div class="hover-wrap">
+		   <span class="overlay-img"></span>
+		   <span class="overlay-text-thumb">VP Engineering</span>		  </div><!-- /.hover-wrap -->
+		   
+		      <%= image_tag "founders/mike.jpg" , size: "400x430" %>
+		   
+		   
+		     </div>
+	     <!-- /.image-wrap -->
+         <h5 class="profile-name">MIKE CHLIAKHOVSKI</h5>
+         <p class="profile-description">Mike is a full-stack software engineer with extensive experience in web application and iOS development, and is dedicated to using technology in the service of the greater good. He has worked for TPS Software, the CISDL, the Canadian Centre for International Justice, and is currently employed as a Senior Software Engineer in Emerging Brands at Match Group. He holds a Bachelor of Computer Science, with distinction, from Concordia University.</p>
+            	
+	     <div class="social">
+	      <ul class="social-icons">
+		 
+		   <li><a href="https://ca.linkedin.com/in/mikhail-chliakhovski-6a9b9b65" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		  </ul>
+	     </div><!-- /.social -->
+        </div><!-- /.col-lg-4 -->
+       <!-- End Profile -->
+        
+       </div><!-- End People -->
+      </div><!-- /.container -->
+     </section>
+     <!-- End About Section -->
+	
+	 <!-- ==============================================
+	 Join Section
+	 =============================================== -->		  
+	 <section class="join">
+	  <div class="container">
+	   <div class="row">
+	    <div class="col-lg-8 col-lg-offset-2">
+		 <h3>Join Us</h3>
+		 <a href="comingsoon.html" class="kafe-btn kafe-btn-default revealOnScroll" data-animation="bounceIn" data-timeout="400">Client  </a>
+		 
+		 
+		 <a class="kafe-btn kafe-btn-default revealOnScroll" data-animation="bounceIn" data-timeout="400"> Lawyer</a>
+		  </div>
+     
+    </div>
+		
+		</div><!-- /.col-lg-8 -->
+	   </div><!-- /.row -->
+	  </div><!-- /container -->
+	 </section><!-- /w -->	
+	 
+     <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+	  <div class="container">
+	   <div class="row">
+	  
+	    <div class="col-md-4 col-sm-6 text-left">
+	     <h4 class="heading no-margin">About Us</h4>
+		 <hr class="mint">
+		 <p> The Ultimate Lawyers Marketplace for Clients  to connect, collaborate, and get work done.</p>
+		 <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+	    </div><!-- /.col-md-4 -->
+	   
+	    <div class="col-md-2 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Company</h4>
+		 <hr class="mint">
+		 <div class ="no-padding">
+		<%= link_to "HOW IT WORKS", :controller => :home, :action => :howitworks%>
+   <%= link_to "FOR LAWYERS", :controller => :home, :action => :forlawyers%>
+		  
+		    <%= link_to "ABOUT US", :controller => :home, :action => :about%>
+		  
+		  
+		     <%= link_to "FAQ", :controller => :home, :action => :faq%>
+		   
+     <%= link_to "CONTACT", :controller => :home, :action => :contact%>		 
+		 </div>
+	    </div><!-- /.col-md-2 -->	
+		
+		<div class="col-md-3 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Other Services</h4>
+		 <hr class="mint">
+		 <div class="no-padding">
+		  <a href="#">Privacy Policy</a>
+		  <a href="#">Terms of Use</a>
+		  <!-- <a href="faq.html">FAQ</a>		  -->
+		 </div>
+	    </div><!-- /.col-md-3 -->	
+		
+	    <div class="col-md-3 col-sm-6 text-left">
+	    <h4 class="heading no-margin">Instagram Feed</h4>
+		<hr class="mint">
+		 <div class="no-padding">
+		   <a href="#"> -</a>
+		   <!-- <a href="#">Top Lawyers by Skill</a> -->
+		   <!-- <a href="#">Top Lawyers in USA</a> -->
+		   <!-- <a href="#">Top Lawyers in Canada</a> -->
+		   <!-- <a href="#">Top Lawyers in Australia</a> -->
+		   <!-- <a href="#">Top Lawyers in Kenya</a>		   -->
+		  </div>
+		 </div><!-- /.col-md-3 -->
+		 
+	    </div><!-- /.row -->
+	   <div class="clearfix"></div>
+	  </div><!-- /.container-->
+     </div><!-- /.footer -->			
+	 
+	 <!-- ==============================================
+	 Made Section
+	 =============================================== -->
+	 <section class="made">
+	  <div class="container">
+	   <div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center">
+		 <h4 class="made-with-love">Legal Lighthouse Inc.</h4>
+		 <p class="made-with-love-1">1500 From St. College, Suite 200, Office 3 St. Laurent, QC, H4L 5G6  </p>
+		</div>
+		<!-- /.col-lg-10 -->
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+     </section><!-- /.made -->
+	 
+	 <!-- ==============================================
+	 Bottom Footer Section
+	 =============================================== -->	 	
+     <footer id="main-footer" class="main-footer">        
+	  <div class="container">   
+	   <div class="row">
+	   
+	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		 <ul class="social-links">
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		 </ul>
+		</div>
+	    <!-- /.col-sm-4 -->     
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		 <div class="img-responsive text-center">
+		  <i>   <%= image_tag "images/logo_en.png" , size: "60x55" %></i>		 </div><!-- End image-->
+		</div>
+		<!-- /.col-sm-4 -->
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		 <p>&copy;2016 Legal Lighthouse Inc. <a href="#" target="_blank"></a></p>
+		</div>
+		<!-- /.col-sm-4 -->
+				
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+	 </footer><!-- /.footer -->  
+	 
+     <a id="scrollup">Scroll</a>
+	 
+     <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+	 
+    
+
+</body>
+</html>

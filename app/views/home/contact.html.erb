@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
+<head>
+
+	    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+        <title>Legal LightHouse</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Add your business website description here">
+        <meta name="keywords" content="Add your, business, website, keywords, here">
+        <meta name="author" content="Add your business, website, author here">
+		
+		<!-- ==============================================
+		Favicons
+		=============================================== --> 
+		<link rel="shortcut icon" href="img/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+		
+	    <!-- ==============================================
+		CSS
+		=============================================== -->
+     
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!-- ADD NEW LIBRARY FOR Font Awesome -->	
+		
+		
+		
+		
+		<!--[if lt IE 9]>
+		 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->		
+		
+</head>
+
+<body>
+
+     <!-- ==============================================
+	 Navbar
+	 =============================================== -->
+	 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <!-- Brand and toggle get grouped for better mobile display -->
+	    <a class="navbar-brand" href="index.html"><i><%= image_tag "images/logo.png" , size: "35x30" %>Legal LightHouse.</a></i>
+       <input type="checkbox" id="toggle" />
+	   <label for="toggle" class="toggle"></label>
+
+         <!-- Collect the nav links, forms, and other content for toggling -->
+		 <ul class="menu">
+		 <!-- <li><a href="index.html">HOME</a></li> -->
+		
+		  <li>  <%= link_to "HOW IT WORKS", :controller => :home, :action => :howitworks%></li>
+		  
+		<li>    <%= link_to "FOR LAWYERS", :controller => :home, :action => :forlawyers%></li>
+		  
+		 <li>    <%= link_to "ABOUT US", :controller => :home, :action => :about%></li>
+		  
+		  
+		  <li>   <%= link_to "FAQ", :controller => :home, :action => :faq%></li>
+		   
+  <li>   <%= link_to "CONTACT", :controller => :home, :action => :contact%></li>
+		 </ul><!-- /.ul.menu -->
+         </div><!-- /.container -->
+         </nav><!-- /.nav -->
+	 
+     <!-- ==============================================
+	 Header
+	 =============================================== -->	 
+     <header class="header-contact">
+      <div class="container">
+	   <div class="content">
+	   
+        <div class="row">
+	     <h1 class="revealOnScroll" data-animation="fadeInDown"><i> <%= image_tag "images/logo.png" , size: "45x40" %></i></i>Contact</h1>
+		 <p>Comments?  Questions?</p>
+        </div><!-- /.row -->
+	   
+	    <!-- <div class="row location revealOnScroll" data-animation="fadeInUp" data-timeout="200"> -->
+		 <!-- <div class="col-lg-4"> -->
+		  <!-- <i class="fa fa-map-marker fa-1x"></i> -->
+		  <!-- <p>1500 From St. College, Suite 200, Office 3 St. Laurent, QC, H4L 5G6</p> -->
+		 <!-- </div><!-- /.col-lg-4 --> 
+		 <!-- <div class="col-lg-4"> -->
+		  <!-- <i class="fa fa-phone fa-1x"></i> -->
+		  <!-- <p>(254) 7-1234-5678</p> -->
+		 <!-- </div><!-- /.col-lg-4 --> 
+		 <!-- <div class="col-lg-4"> -->
+		  <!-- <i class="fa fa-envelope fa-1x"></i> -->
+		  <!-- <p>info@mail.com</p> -->
+		 <!-- </div><!-- /.col-lg-4 --> 
+	    <!-- </div><!-- /.row --> 
+		
+       </div><!-- /.content -->
+	  </div><!-- /.container -->
+     </header><!-- /header -->
+	 
+     <!-- ==============================================
+     Map Section
+     =============================================== -->
+	 <!-- <div class="map"> -->
+	  <!-- <div class="container-fluid"> -->
+	   <!-- <div class="row"> -->
+	   <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.130369917133!2d36.80390184826668!3d-1.3157805385798884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1053bc7118e7%3A0xb365376f1d28175!2sNairobi+West%2C+Nairobi!5e0!3m2!1sen!2ske!4v1463256840401" width="600" height="450" style="border:0" allowfullscreen></iframe> -->
+	   <!-- </div><!-- /.row --> 
+	  <!-- </div><!-- /.container-fluid -->
+	 <!-- </div><!-- /.map --> 
+	 
+     <!-- ==============================================
+     Contact Section
+     =============================================== -->	  	 
+	 <section class="contact">
+	  <div class="container">
+	   <div class="row">
+	   
+	    <div class="text-center">
+		 <h3>Contact Us</h3>
+		 <hr class="mint">
+		 <!-- <p class="top-p">We're always connected. Get in touch using however you like.</p> -->
+	    </div>
+	   
+        <!-- The contactform -->
+		<form method="post" action="#" name="contactform" id="contactform" class="animations fade-up d3">
+		
+		
+		<!-- contact.php -->
+		
+		
+		 <fieldset>
+		  <div class="col-lg-6">
+           <!-- Name -->
+		   <label for="name" accesskey="U"><i class="fa fa-user"></i></label>
+		   <input name="name" type="text" id="name" size="30" value="" />
+		   
+		   <!-- Email -->
+		   <label for="email" accesskey="E"><i class="fa fa-envelope-o"></i></label>
+		   <input name="email" type="text" id="email" size="30" value="" />
+		   
+		   <!-- Phone -->
+		   <label for="phone" accesskey="P"><i class="fa fa-phone"></i></label>
+		   <input name="phone" type="text" id="phone" size="30" value="" />
+		  </div>
+		  <div class="col-lg-6">
+		   <!-- Comments / Message -->
+		   <label for="comments" accesskey="C"><i class="fa fa-comment"></i></label>
+		   <textarea name="comments" id="comments"></textarea>
+
+		   <!-- Verification -->
+		   <label for="verify" accesskey="V">3 * 15 =</label>
+		   <input name="verify" type="text" id="verify" size="4" value="" class="input-verify" />
+		  </div>
+		  <div class="col-lg-12 text-center">
+		   <!-- Send button -->
+		   <button type="submit" class="kafe-btn kafe-btn-mint full-width">Submit</button>
+          </div>
+		 </fieldset>
+		</form>		
+			
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+	 </section><!-- /section -->
+	 
+     <!-- ==============================================
+	 Footer Section
+	 =============================================== -->
+     <div class="footer">
+	  <div class="container">
+	   <div class="row">
+	  
+	    <div class="col-md-4 col-sm-6 text-left">
+	     <h4 class="heading no-margin">About Us</h4>
+		 <hr class="mint">
+		 <p> The Ultimate Lawyers Marketplace for Clients to connect, collaborate, and get work done.</p>
+		 <p>We work hard to build a great product that is beautifully designed, simple to use, user friendly with great focus on user experience and customer service.</p>
+	    </div><!-- /.col-md-4 -->
+	   
+	    <div class="col-md-2 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Company</h4>
+		 <hr class="mint">
+		 <div class ="no-padding">
+		  <!-- <a href="index.html">Home</a> -->
+		 <%= link_to "HOW IT WORKS", :controller => :home, :action => :howitworks%>
+   <%= link_to "FOR LAWYERS", :controller => :home, :action => :forlawyers%>
+		  
+		    <%= link_to "ABOUT US", :controller => :home, :action => :about%>
+		  
+		  
+		     <%= link_to "FAQ", :controller => :home, :action => :faq%>
+		   
+     <%= link_to "CONTACT", :controller => :home, :action => :contact%>			 
+		 </div>
+	    </div><!-- /.col-md-2 -->	
+		
+		<div class="col-md-3 col-sm-6 text-left">
+	     <h4 class="heading no-margin">Other Services</h4>
+		 <hr class="mint">
+		 <div class="no-padding">
+		  <a href="#">Privacy Policy</a>
+		  <a href="#">Terms of Use</a>
+		  <!-- <a href="faq.html">FAQ</a>		  -->
+		 </div>
+	    </div><!-- /.col-md-3 -->	
+		
+	     <div class="col-md-3 col-sm-6 text-left">
+	    <h4 class="heading no-margin">Instagram Feed</h4>
+		<hr class="mint">
+		 <div class="no-padding">
+		   <a href="#"> -</a>
+		   <!-- <a href="#">Top Lawyers by Skill</a> -->
+		   <!-- <a href="#">Top Lawyers in USA</a> -->
+		   <!-- <a href="#">Top Lawyers in Canada</a> -->
+		   <!-- <a href="#">Top Lawyers in Australia</a> -->
+		   <!-- <a href="#">Top Lawyers in Kenya</a>		   -->
+		  </div>
+		 </div><!-- /.col-md-3 -->
+		 
+	    </div><!-- /.row -->
+	   <div class="clearfix"></div>
+	  </div><!-- /.container-->
+     </div><!-- /.footer -->		
+	 
+	 <!-- ==============================================
+	 Made Section
+	 =============================================== -->
+	 <section class="made">
+	  <div class="container">
+	   <div class="row">
+			<div class="col-lg-10 col-lg-offset-1 text-center">
+		 <h4 class="made-with-love">Legal Lighthouse Inc.</h4>
+		 <p class="made-with-love-1">1500 From St. College, Suite 200, Office 3 St. Laurent, QC, H4L 5G6  </p>
+		</div>
+		<!-- /.col-lg-10 -->
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+     </section><!-- /.made -->
+	 
+	 <!-- ==============================================
+	 Bottom Footer Section
+	 =============================================== -->	
+     <footer id="main-footer" class="main-footer">
+	  <div class="container">
+	   <div class="row">
+	   
+	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		 <ul class="social-links">
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="800"><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="600"><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="400"><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft" data-timeout="200"><a href="#link"><i class="fa fa-pinterest fa-fw"></i></a></li>
+		  <li class="revealOnScroll" data-animation="slideInLeft"><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+		 </ul>
+		</div>
+	    <!-- /.col-sm-4 -->
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="bounceIn" data-timeout="200">
+		 <div class="img-responsive text-center">
+		  <i>   <%= image_tag "images/logo_en.png" , size: "60x55" %></i>		 </div><!-- End image-->
+		</div>
+		<!-- /.col-sm-4 -->
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right revealOnScroll" data-animation="slideInRight" data-timeout="200">
+		 <p>&copy;2016 Legal Lighthouse Inc. <a href="#" target="_blank"></a></p>
+		</div>
+		<!-- /.col-sm-4 -->
+				
+	   </div><!-- /.row -->
+	  </div><!-- /.container -->
+	 </footer><!-- /.footer -->  
+	 
+     <a id="scrollup">Scroll</a>
+	 
+     <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+	 
+    
+
+</body>
+</html>
